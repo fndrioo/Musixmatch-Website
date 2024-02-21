@@ -6,9 +6,11 @@
   font-family: 'Poppins', sans-serif;
 }
 html,body{
-  display: grid;
-  height: 100%;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
   place-items: center;
   background: #f2f2f2;
   /* background: linear-gradient(-135deg, #c850c0, #4158d0); */
@@ -31,7 +33,7 @@ html,body{
   color: #fff;
   user-select: none;
   border-radius: 15px 15px 0 0;
-  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  background: linear-gradient(-135deg, black, grey);
 }
 .wrapper form{
   padding: 10px 30px 50px 30px;
@@ -109,7 +111,7 @@ form .field input[type="submit"]{
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
-  background: linear-gradient(-135deg, #c850c0, #4158d0);
+  background:black;
   transition: all 0.3s ease;
 }
 form .field input[type="submit"]:active{
@@ -118,6 +120,10 @@ form .field input[type="submit"]:active{
 form .signup-link{
   color: #262626;
   margin-top: 20px;
+  text-align: center;
+}
+
+.signup-link {
   text-align: center;
 }
 form .pass-link a,
